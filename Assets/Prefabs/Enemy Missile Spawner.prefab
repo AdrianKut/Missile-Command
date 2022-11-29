@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6462817225893833709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6462817225893833707}
+  - component: {fileID: 6462817225893833706}
+  - component: {fileID: 1814294940}
+  m_Layer: 0
+  m_Name: Enemy Missile Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6462817225893833707
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6462817225893833709}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6462817225893833706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6462817225893833709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ec0ef0b09f4c3f45898e5c62538c839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _airplanePrefab: {fileID: 5898568027560832803, guid: 9603878a06ecf3a45913d1b5989bf741, type: 3}
+  _missilePrefab: {fileID: 619846488196579934, guid: 1bf5c6a853daf21479c58441fc8c4eda, type: 3}
+  _spawnAirplaneDelay: 5
+  _spawnMissileDelay: 1
+  _leftCorner: {x: -8, y: 7}
+  _rightCorner: {x: 8, y: 7}
+  _targetsEnemies:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _leftEnemies: 0
+--- !u!114 &1814294940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6462817225893833709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dc79322041cc9843bb842e7d8231015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _amountMissile: 10
+  _increaseMissilePerStage: 2
+  _amountAirplane: 0
+  _increaseAirplanePerStage: 1

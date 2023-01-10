@@ -9,3 +9,8 @@
 
 ## :bulb: About project
 Clone old game https://en.wikipedia.org/wiki/Missile_Command
+#
+<p align="center">
+  <a href="https://96games.itch.io/missile-command"> <img width="250" src="https://static.itch.io/images/badge-color.svg" alt="Download app"></a>
+</p>
+
